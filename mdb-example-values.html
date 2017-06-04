@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`mdb-example-values`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="mdb-example-values">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'mdb-example-values',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'mdb-example-values',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
